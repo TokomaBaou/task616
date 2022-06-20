@@ -12,6 +12,39 @@ export const App = () => {
   const even_or_odd = (number: number) => {
     return number % 2 ? "Odd" : "Even";
   };
+
+  interface Obj {
+    a: number;
+    b: number;
+    c: number;
+  }
+  const obj: Obj = {
+    a: 3,
+    b: 4,
+    c: 5
+  };
+  const setReserach = Object.keys(obj).reduce(
+    (researchResult, key) => ({
+      ...researchResult,
+      [key]: obj[key] * 2
+    }),
+    {}
+  );
+
+  const setReserachList = Object.keys(obj).map(
+    (researchResult) => obj[researchResult] * 2
+  );
+
+  console.log(setReserach);
+  console.log(setReserachList);
+  // a:researchResult.a,
+  // b:researchResult.b,
+  // c:researchResult.c
+  // const setData = () => {
+  //   researchResult.
+  // }
+  // return setData
+
   return (
     <div className="App">
       {console.log(getCount("abrakatabura"))}
