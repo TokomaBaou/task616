@@ -45,6 +45,13 @@ export const App = () => {
   // }
   // return setData
 
+  //仕組み
+  // 検索条件が全て空の場合に警告メッセージを表示する
+  // if (
+  //   !(Object.keys(values) as (keyof SearchInputState["form"])[]).some((key) =>
+  //     Boolean(values[key])
+  //   )
+  // )
   return (
     <div className="App">
       {console.log(getCount("abrakatabura"))}
