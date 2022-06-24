@@ -52,6 +52,14 @@ export const App = () => {
   //     Boolean(values[key])
   //   )
   // )
+
+  [...Array(50)].map((number: any, index: any) => {
+    return ({ id: index + 1, no: index + 1, category: '電気学会 電磁環境研究会', title: `サンプル題目${index + 1}`, date: '2021/10/10' })
+    })
+
+  [...Array(3)].map((number: any, index: any) => {
+      return ({ no: index + 1, award: 'XXX賞', name: '成果 太郎, 成果 次郎, 成果 三郎', group: 'YYY法人', date: '2021/10/10' })
+    })
   return (
     <div className="App">
       {console.log(getCount("abrakatabura"))}
